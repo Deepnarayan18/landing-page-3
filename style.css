@@ -1,0 +1,196 @@
+*{ 
+    margin: 0; 
+    padding: 0;  
+    
+    box-sizing: border-box;
+} 
+html,body{  
+    
+    width:100% ;
+    height:100%; 
+}   
+#main{ 
+    width:100% ;
+    height:100%;  
+    background-color:black;
+} 
+#part1{  
+    position: relative;
+    width:100% ;
+    height:55%;  
+    background-color: black; 
+    background-image: url(https://images.unsplash.com/photo-1487215078519-e21cc028cb29?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88d1d36d47ef07d4fb7623337e0e607e&w=1000&q=80); 
+    background-position:50% 50% ; 
+    background-size:cover;
+}   
+#text{  
+    display: flex;  
+    justify-content: space-between;
+    position: absolute; 
+    bottom: 20%;
+    width:100% ; 
+    padding: 0 4vw; 
+    color: aliceblue;
+}  
+#textrigh{ 
+    
+     display: flex; 
+     justify-content: space-between; 
+     
+}  
+#textrigh i{ 
+    font-size: 16px;
+     color: antiquewhite;
+}
+#textrigh p{ 
+    font-size: 14px;  
+    font-family:  Arial, Helvetica, sans-serif; 
+    width: 60%;
+    color: antiquewhite; 
+    font-weight: 400;
+    
+}
+#text h1{ 
+    font-size: 6vw; 
+    font-weight: 400; 
+    font-style: initial; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: antiquewhite;
+}
+
+#part2{   
+    display: flex;
+    width:100% ;
+    height:50%;  
+    background-color:black;
+} 
+#mera1{ 
+    width:25% ;
+    height:100%;  
+    background-image: url(https://i.pinimg.com/736x/a5/44/27/a54427efa5931f9ee01f46425a05d080.jpg);  
+    background-position: center; 
+    background-size: cover;
+    
+} 
+#mera2{ 
+    width:25%;
+    height:100%;  
+    background-color:black;
+}  
+#b2top{ 
+    height:50%;
+    width:100%;  
+    background-image: url(https://wallpapercave.com/wp/wp8973792.jpg); 
+    background-position: center; 
+    background-size: cover;
+} 
+#b2bot{ 
+    height:50%;
+    width:100%;   
+    background-image: url(https://miro.medium.com/max/1400/1*oogWGujVqwKyACusOatpKg.jpeg); 
+    background-position: center; 
+    background-size: cover;
+}
+#mera3{ 
+    width:25%;
+    height:100%;  
+    background-image: url(https://i.pinimg.com/originals/d4/ed/96/d4ed96224b470c0d18dcbc27a7b33609.jpg); 
+    background-position: center; 
+    background-size: cover;
+} 
+#mera4{ 
+    width:25%;
+    height:100%;  
+    background-color: black
+} 
+#tera{ 
+    height:50%;
+    width:100%;  
+    background-image: url(https://i.ytimg.com/vi/lATJR6DG23k/maxresdefault.jpg); 
+    background-position: bottom; 
+    background-size: cover;
+} 
+#mera{ 
+    height:50%;
+    width:100%;  
+    background-image: url(https://wallpapercave.com/wp/wp2327034.jpg); 
+    background-position: center; 
+    background-size: cover;
+} 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Apply the animation to the H1 tag */
+  h1 {
+    animation: fadeIn 7s ease-in-out infinite; /* You can adjust the duration and timing function as needed */
+  }
+ p{ 
+    animation: fadeIn 7s ease-in-out infinite; 
+ } 
+ @keyframes backgroundSlideOne {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes backgroundfadeInTwo {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+} 
+#tera {
+    background-image: url(https://i.ytimg.com/vi/lATJR6DG23k/maxresdefault.jpg);
+    background-size: cover;
+    animation: backgroundSlideOne 5s linear infinite; /* 5s duration, linear easing, infinite loop */
+}
+
+#mera {
+    background-image: url(https://wallpapercave.com/wp/wp2327034.jpg);
+    background-size: cover;
+    animation: backgroundSlideOne 5s linear infinite; /* 5s duration, linear easing, infinite loop */
+}
+#b2top {
+    background-image: url(https://wallpapercave.com/wp/wp8973792.jpg);
+    background-size: cover;
+    animation: backgroundSlideOne 5s linear infinite; /* 5s duration, linear easing, infinite loop */
+}
+
+#b2bot {
+    background-image: url(https://miro.medium.com/max/1400/1*oogWGujVqwKyACusOatpKg.jpeg);
+    background-size: cover;
+    animation: backgroundSlideOne 5s linear infinite; /* 5s duration, linear easing, infinite loop */
+}
+@keyframes floatAnimation {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(50px, 50px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  } 
+  #mera1{ 
+    background-image: url(https://i.pinimg.com/736x/a5/44/27/a54427efa5931f9ee01f46425a05d080.jpg); /* Replace 'your-image.jpg' with your actual image file */
+    background-size: cover;
+    animation: floatAnimation 10s infinite linear;
+  } 
+  #mera2{ 
+    background-image: url(); /* Replace 'your-image.jpg' with your actual image file */
+    background-size: cover;
+    animation: floatAnimation 10s infinite linear;
+  } 
+  
